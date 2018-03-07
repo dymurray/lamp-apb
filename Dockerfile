@@ -1,0 +1,11 @@
+FROM ansible-runner
+
+LABEL "com.redhat.apb.spec"=\
+"dmVyc2lvbjogMS4wCm5hbWU6IGxhbXAtYXBiCmRlc2NyaXB0aW9uOiB5b3VyIGRlc2NyaXB0aW9u\
+CmJpbmRhYmxlOiBGYWxzZQphc3luYzogb3B0aW9uYWwKbWV0YWRhdGE6CiAgZGlzcGxheU5hbWU6\
+IGxhbXAtYXBiCnBsYW5zOgogIC0gbmFtZTogZGVmYXVsdAogICAgZGVzY3JpcHRpb246IFRoaXMg\
+ZGVmYXVsdCBwbGFuIGRlcGxveXMgbGFtcC1hcGIKICAgIGZyZWU6IFRydWUKICAgIG1ldGFkYXRh\
+OiB7fQogICAgcGFyYW1ldGVyczogW10="
+
+ADD playbooks /runner/project/
+COPY . /etc/ansible/roles/lamp-apb

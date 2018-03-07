@@ -1,0 +1,13 @@
+version: 1.0
+name: lamp-apb
+description: your description
+bindable: False
+async: optional
+metadata:
+  displayName: lamp-apb
+plans:
+  - name: default
+    description: This default plan deploys lamp-apb
+    free: True
+    metadata: {}
+    parameters: []

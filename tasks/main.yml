@@ -1,0 +1,8 @@
+---
+# tasks file for lamp-apb
+- include_role:
+    name: geerlingguy.mysql
+- include_role:
+    name: geerlingguy.apache
+- include_role:
+    name: geerlingguy.php
